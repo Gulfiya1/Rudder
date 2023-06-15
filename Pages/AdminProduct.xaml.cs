@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ООО__Руль_.Window;
+
 
 namespace ООО__Руль_.Pages
 {
@@ -54,7 +54,12 @@ namespace ООО__Руль_.Pages
                 MessageBox.Show("Выбберите поле для редактирования");
 
             }
-            EditingProduct et = new EditingProduct(t, list); et.Show();
+            Edititng__product et = new Edititng__product(t, list); et.Show();
+        }
+
+        private void AddButton(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddProduct());
         }
     }
 }

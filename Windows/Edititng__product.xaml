@@ -1,0 +1,30 @@
+﻿<Window x:Class="ООО__Руль_.Edititng__product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО__Руль_"
+        mc:Ignorable="d"
+        Title="Edititng__product" Height="480" Width="800">
+    <Grid Background="#FFEEE3E3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="299*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="28" Margin="128.306,104,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <Label  Content="Наименование товара" HorizontalAlignment="Left" Margin="100,101,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label  Content="Редактирование данных" HorizontalAlignment="Left" Margin="87.306,21,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="22" Grid.Column="1"/>
+        <Label  Content="Максимальная скидка" HorizontalAlignment="Left" Margin="98,292,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label  Content="Производитель" HorizontalAlignment="Left" Margin="100,196,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label  Content="Цена" HorizontalAlignment="Left" Margin="100,244,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <Label  Content="Описание товара" HorizontalAlignment="Left" Margin="100,147,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label Content="Image" HorizontalAlignment="Left" Margin="100,336,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox Name="discription" HorizontalAlignment="Left" Height="28" Margin="128.306,150,0,0" TextWrapping="Wrap" Text="{Binding Discription}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <TextBox Name="maker" HorizontalAlignment="Left" Height="28" Margin="128.306,199,0,0" TextWrapping="Wrap" Text="{Binding Maker}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <TextBox Name="cost" HorizontalAlignment="Left" Height="28" Margin="128.306,247,0,0" TextWrapping="Wrap" Text="{Binding Cost}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <TextBox Name="discount" HorizontalAlignment="Left" Height="28" Margin="128.306,295,0,0" TextWrapping="Wrap" Text="{Binding Max_Discount}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <TextBox Name="image" HorizontalAlignment="Left" Height="28" Margin="128.306,339,0,0" TextWrapping="Wrap" Text="{Binding Image}" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
+        <Button Content="Изменить" Click="InsertClick" HorizontalAlignment="Left" Margin="168,383,0,0" VerticalAlignment="Top" Width="110" Grid.Column="1" FontFamily="Times New Roman" FontSize="18" Height="26"/>
+
+    </Grid>
+</Window>
