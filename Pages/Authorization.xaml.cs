@@ -55,7 +55,7 @@ namespace ООО__Руль_.Pages
 
         private void OK_ButtonClick(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new AdminProduct());
         }
     }
 }

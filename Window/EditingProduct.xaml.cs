@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ООО__Руль_.Pages;
 
-namespace ООО__Руль_
+namespace ООО__Руль_.Window
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EditingProduct.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditingProduct : Window
     {
-        public MainWindow()
+        public EditingProduct()
         {
             InitializeComponent();
-            MyFrame.Navigate(new Authorization());
         }
     }
 }
