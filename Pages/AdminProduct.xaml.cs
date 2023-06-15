@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ООО__Руль_.Pages;
 
-namespace ООО__Руль_
+namespace ООО__Руль_.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AdminProduct.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AdminProduct : Page
     {
-        public MainWindow()
+        public AdminProduct()
         {
             InitializeComponent();
-            MyFrame.Navigate(new Authorization());
         }
     }
 }
